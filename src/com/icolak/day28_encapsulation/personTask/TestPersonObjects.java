@@ -18,8 +18,8 @@ public class TestPersonObjects {
 
         person4.name = "James";
 
-       // person1.planet = "Mars";
-       //  Person.planet = "Mars";
+        // person1.planet = "Mars";
+        //  Person.planet = "Mars";
 
 
         System.out.println(person1);
@@ -28,7 +28,6 @@ public class TestPersonObjects {
         System.out.println(person4);
         System.out.println(person5);
         System.out.println(person6);
-
 
         Person.printPlanetName();
 
@@ -39,8 +38,5 @@ public class TestPersonObjects {
         person5.drink("Tea");
 
         person6.drink("Coffee");
-
-
     }
-
 }
