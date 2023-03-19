@@ -17,8 +17,8 @@ public class TestMultiThreading {
         thread4.run();
         thread5.run();
 */
-        // if we want the threads get to be executed at the same time
-        // we have to use start method instead of run method. When we use start method,
+        // if we want the threads get to be executed at the same time(thread2 doesn't wait for thread1 to finish)
+        // we have to use start method instead of run method When we use start method,
         // run method gets executed at the same time
         thread1.start();
         thread2.start();
