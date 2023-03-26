@@ -9,9 +9,7 @@ public class Test {
     public static void main(String[] args) {
 
         Integer[] numbers = {1, 2, 3, 4, 5, 6};
-
         Double[] decimals = {1.5, 2.5, 3.5, 4.5, 5.5, 6.5};
-
         String[] names = {"Java", "Selenium", "SQL", "C++", "Photon"};
 
         List<Integer> listNumbers = new ArrayList<>(Arrays.asList(numbers));
@@ -34,5 +32,19 @@ public class Test {
         GenericsMethod.printEach(listNumbers);
         GenericsMethod.printEach(listDecimals);
         GenericsMethod.printEach(listNames);
+
+        System.out.println();
+        System.out.println("*****Generics Class*****");
+        GenericsClass<Integer> genericsInteger = new GenericsClass<>();
+        genericsInteger.printEach(numbers);
+        genericsInteger.printEach(listNumbers);
+
+        GenericsClass<Double> genericsDouble = new GenericsClass<>();
+        genericsDouble.printEach(decimals);
+        genericsDouble.printEach(listDecimals);
+
+        GenericsClass<String> genericsString = new GenericsClass<>();
+        genericsString.printEach(names);
+        genericsString.printEach(listNames);
     }
 }
