@@ -35,5 +35,14 @@ public class ThrowKeyword {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+        System.out.println("-----------------------------------------------------------");
+
+        // you can choose one of the two
+        RuntimeException exception = new RuntimeException();
+        // throw exception;
+        // throw new RuntimeException();
+
+        // throw new Person("Denis", 36, 'M'); we can not use like that
     }
 }
