@@ -2,6 +2,8 @@ package com.icolak.day38_exceptions;
 
 import com.icolak.utilities.Library;
 
+import java.time.LocalTime;
+
 public class Test {
 
     public static void main(String[] args)  {
@@ -14,5 +16,11 @@ public class Test {
         System.out.println("How are you today?");
 
         System.out.println("-----------------------------");
+
+        if (LocalTime.now().equals(LocalTime.of(4,0))) {
+            throw new BreakTimeException();
+        }
+
+        throw new BreakTimeException("It is time to go home");
     }
 }
